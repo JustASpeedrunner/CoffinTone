@@ -38,15 +38,7 @@ public class MineCommand extends Command {
 
     @Override
     public void execute(String label, IArgConsumer args) throws CommandException {
-        int quantity = args.getAsOrDefault(Integer.class, 0);
-        args.requireMin(1);
-        List<BlockOptionalMeta> boms = new ArrayList<>();
-        while (args.hasAny()) {
-            boms.add(args.getDatatypeFor(ForBlockOptionalMeta.INSTANCE));
-        }
-        BaritoneAPI.getProvider().getWorldScanner().repack(ctx);
-        logDirect(String.format("Mining %s", boms.toString()));
-        baritone.getMineProcess().mine(quantity, boms.toArray(new BlockOptionalMeta[0]));
+        logDirect(String.format("Mining has been removed from this version of Baritone."));
     }
 
     @Override
@@ -60,20 +52,13 @@ public class MineCommand extends Command {
 
     @Override
     public String getShortDesc() {
-        return "Mine some blocks";
+        return "Mining has been removed from this version of Baritone.";
     }
 
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "The mine command allows you to tell Baritone to search for and mine individual blocks.",
-                "",
-                "The specified blocks can be ores, or any other block.",
-                "",
-                "Also see the legitMine settings (see #set l legitMine).",
-                "",
-                "Usage:",
-                "> mine diamond_ore - Mines all diamonds it can find."
+                "Mining has been removed from this version of Baritone."
         );
     }
 }
