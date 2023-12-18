@@ -98,13 +98,13 @@ public class ExecutionControlCommands {
 
             @Override
             public String getShortDesc() {
-                return "Pauses Baritone until you use resume";
+                return "Pauses CoffinTone until you use resume";
             }
 
             @Override
             public List<String> getLongDesc() {
                 return Arrays.asList(
-                        "The pause command tells Baritone to temporarily stop whatever it's doing.",
+                        "The pause command tells CoffinTone to temporarily stop whatever it's doing.",
                         "",
                         "This can be used to pause pathing, building, following, whatever. A single use of the resume command will start it right back up again!",
                         "",
@@ -132,13 +132,13 @@ public class ExecutionControlCommands {
 
             @Override
             public String getShortDesc() {
-                return "Resumes Baritone after a pause";
+                return "Resumes CoffinTone after a pause";
             }
 
             @Override
             public List<String> getLongDesc() {
                 return Arrays.asList(
-                        "The resume command tells Baritone to resume whatever it was doing when you last used pause.",
+                        "The resume command tells CoffinTone to resume whatever it was doing when you last used pause.",
                         "",
                         "Usage:",
                         "> resume"
@@ -149,7 +149,7 @@ public class ExecutionControlCommands {
             @Override
             public void execute(String label, IArgConsumer args) throws CommandException {
                 args.requireMax(0);
-                logDirect(String.format("Baritone is %spaused", paused[0] ? "" : "not "));
+                logDirect(String.format("CoffinTone is %spaused", paused[0] ? "" : "not "));
             }
 
             @Override
@@ -159,13 +159,13 @@ public class ExecutionControlCommands {
 
             @Override
             public String getShortDesc() {
-                return "Tells you if Baritone is paused";
+                return "Tells you if CoffinTone is paused";
             }
 
             @Override
             public List<String> getLongDesc() {
                 return Arrays.asList(
-                        "The paused command tells you if Baritone is currently paused by use of the pause command.",
+                        "The paused command tells you if CoffinTone is currently paused by use of the pause command.",
                         "",
                         "Usage:",
                         "> paused"
@@ -190,13 +190,13 @@ public class ExecutionControlCommands {
 
             @Override
             public String getShortDesc() {
-                return "Cancel what Baritone is currently doing";
+                return "Cancel what CoffinTone is currently doing";
             }
 
             @Override
             public List<String> getLongDesc() {
                 return Arrays.asList(
-                        "The cancel command tells Baritone to stop whatever it's currently doing.",
+                        "The cancel command tells CoffinTone to stop whatever it's currently doing.",
                         "",
                         "Usage:",
                         "> cancel"

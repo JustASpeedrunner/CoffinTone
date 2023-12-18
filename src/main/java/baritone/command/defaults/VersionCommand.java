@@ -40,7 +40,7 @@ public class VersionCommand extends Command {
         if (version == null) {
             throw new CommandInvalidStateException("Null version (this is normal in a dev environment)");
         } else {
-            logDirect(String.format("You are running Baritone v%s", version));
+            logDirect(String.format("You are running CoffinTone v%s", version));
         }
     }
 
@@ -51,13 +51,13 @@ public class VersionCommand extends Command {
 
     @Override
     public String getShortDesc() {
-        return "View the Baritone version";
+        return "View the CoffinTone version";
     }
 
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "The version command prints the version of Baritone you're currently running.",
+                "The version command prints the version of CoffinTone you're currently running.",
                 "",
                 "Usage:",
                 "> version - View version information, if present"

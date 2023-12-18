@@ -325,7 +325,7 @@ public class SelCommand extends Command {
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "The sel command allows you to manipulate Baritone's selections, similarly to WorldEdit.",
+                "The sel command allows you to manipulate CoffinTone's selections, similarly to WorldEdit.",
                 "",
                 "Using these selections, you can clear areas, fill them with blocks, or something else.",
                 "",

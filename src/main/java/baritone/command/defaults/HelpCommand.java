@@ -56,7 +56,7 @@ public class HelpCommand extends Command {
                                     .filter(command -> !command.hiddenFromHelp())
                                     .collect(Collectors.toList())
                     ),
-                    () -> logDirect("All Baritone commands (clickable):"),
+                    () -> logDirect("All CoffinTone commands (clickable):"),
                     command -> {
                         String names = String.join("/", command.getNames());
                         String name = command.getNames().get(0);
@@ -118,7 +118,7 @@ public class HelpCommand extends Command {
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "Using this command, you can view detailed help information on how to use certain commands of Baritone.",
+                "Using this command, you can view detailed help information on how to use certain commands of CoffinTone.",
                 "",
                 "Usage:",
                 "> help - Lists all commands and their short descriptions.",

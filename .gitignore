@@ -1,6 +1,9 @@
 .DS_Store
 **/*.swp
 
+release/
+mv.sh
+
 run/
 autotest/
 dist/

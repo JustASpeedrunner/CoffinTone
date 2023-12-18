@@ -126,7 +126,7 @@ public class FollowCommand extends Command {
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "The follow command tells Baritone to follow certain kinds of entities.",
+                "The follow command tells CoffinTone to follow certain kinds of entities.",
                 "",
                 "Usage:",
                 "> follow entities - Follows all entities.",

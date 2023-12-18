@@ -51,9 +51,7 @@ public class GotoCommand extends Command {
             baritone.getCustomGoalProcess().setGoalAndPath(goal);
             return;
         }
-        args.requireMax(1);
-        BlockOptionalMeta destination = args.getDatatypeFor(ForBlockOptionalMeta.INSTANCE);
-        baritone.getGetToBlockProcess().getToBlock(destination);
+        logDirect(String.format("#goto <block> was removed from CoffinTone."));
     }
 
     @Override
@@ -72,12 +70,12 @@ public class GotoCommand extends Command {
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "The goto command tells Baritone to head towards a given goal or block.",
+                "The goto command tells CoffinTone to head towards a given goal or block.",
                 "",
                 "Wherever a coordinate is expected, you can use ~ just like in regular Minecraft commands. Or, you can just use regular numbers.",
                 "",
                 "Usage:",
-                "> goto <block> - Go to a block, wherever it is in the world",
+                "> goto <block> was removed from CoffinTone.",
                 "> goto <y> - Go to a Y level",
                 "> goto <x> <z> - Go to an X,Z position",
                 "> goto <x> <y> <z> - Go to an X,Y,Z position"

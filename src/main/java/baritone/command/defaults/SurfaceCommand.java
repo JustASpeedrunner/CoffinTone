@@ -76,7 +76,7 @@ public class SurfaceCommand extends Command {
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "The surface/top command tells Baritone to head towards the closest surface-like area.",
+                "The surface/top command tells CoffinTone to head towards the closest surface-like area.",
                 "",
                 "This can be the surface or the highest available air space, depending on circumstances.",
                 "",

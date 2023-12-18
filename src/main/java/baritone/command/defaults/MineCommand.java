@@ -38,7 +38,7 @@ public class MineCommand extends Command {
 
     @Override
     public void execute(String label, IArgConsumer args) throws CommandException {
-        logDirect(String.format("Mining has been removed from this version of Baritone."));
+        logDirect(String.format("#mine was removed from CoffinTone."));
     }
 
     @Override
@@ -52,13 +52,13 @@ public class MineCommand extends Command {
 
     @Override
     public String getShortDesc() {
-        return "Mining has been removed from this version of Baritone.";
+        return "#mine was removed from CoffinTone.";
     }
 
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "Mining has been removed from this version of Baritone."
+                "#mine was removed from CoffinTone."
         );
     }
 }

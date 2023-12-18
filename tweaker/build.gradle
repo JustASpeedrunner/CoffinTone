@@ -87,7 +87,7 @@ jar {
                 'MixinConfigs': 'mixins.baritone.json',
                 "MixinConnector": "baritone.launch.BaritoneMixinConnector",
 
-                'Implementation-Title': 'Baritone',
+                'Implementation-Title': 'CoffinTone',
                 'Implementation-Version': version,
         )
     }

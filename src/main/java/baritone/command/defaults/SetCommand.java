@@ -261,7 +261,7 @@ public class SetCommand extends Command {
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "Using the set command, you can manage all of Baritone's settings. Almost every aspect is controlled by these settings - go wild!",
+                "Using the set command, you can manage all of CoffinTone's settings. Almost every aspect is controlled by these settings - go wild!",
                 "",
                 "Usage:",
                 "> set - Same as `set list`",
@@ -274,7 +274,7 @@ public class SetCommand extends Command {
                 "> set toggle <setting> - Toggle a boolean setting",
                 "> set save - Save all settings (this is automatic tho)",
                 "> set load - Load settings from settings.txt",
-                "> set load [filename] - Load settings from another file in your minecraft/baritone"
+                "> set load [filename] - Load settings from another file in your minecraft/coffintone"
         );
     }
 }

@@ -1,17 +1,17 @@
 
 {
   "schemaVersion": 1,
-  "id": "baritone",
+  "id": "coffintone",
   "version": "${version}",
 
-  "name": "Baritone",
-  "description": "Google Maps for Blockgame",
+  "name": "CoffinTone",
+  "description": "Baritone fork for the CoffinSMP",
   "authors": [
-    "leijurv", "Brady"
+    "leijurv", "Brady", "JustASpeedrunner"
   ],
   "contact": {
-    "homepage": "https://github.com/cabaletta/baritone",
-    "sources": "https://github.com/cabaletta/baritone"
+    "homepage": "https://github.com/justaspeedrunner/coffintone",
+    "sources": "https://github.com/justaspeedrunner/coffintone"
   },
 
   "license": "LGPL-3.0",
