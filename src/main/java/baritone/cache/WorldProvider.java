@@ -81,7 +81,7 @@ public class WorldProvider implements IWorldProvider {
                 Files.createDirectories(readmeDir);
                 Files.write(
                         readmeDir.resolve("readme.txt"),
-                        "https://github.com/cabaletta/baritone\n".getBytes(StandardCharsets.US_ASCII)
+                        "https://github.com/JustASpeedrunner/CoffinTone\n".getBytes(StandardCharsets.US_ASCII)
                 );
             } catch (IOException ignored) {}
 
@@ -91,7 +91,7 @@ public class WorldProvider implements IWorldProvider {
                 Files.createDirectories(worldDataDir);
             } catch (IOException ignored) {}
 
-            System.out.println("Baritone world data dir: " + worldDataDir);
+            System.out.println("CoffinTone world data dir: " + worldDataDir);
             synchronized (worldCache) {
                 this.currentWorld = worldCache.computeIfAbsent(worldDataDir, d -> new WorldData(d, world.dimensionType()));
             }
