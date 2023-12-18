@@ -53,13 +53,10 @@ public interface Helper {
     /**
      * The tag to assign to chat messages when {@link Settings#useMessageTag} is {@code true}.
      */
-    GuiMessageTag MESSAGE_TAG = new GuiMessageTag(0xFF55FF, null, Component.literal("Baritone message."), "Baritone");
+    GuiMessageTag MESSAGE_TAG = new GuiMessageTag(0xFF55FF, null, Component.literal("CoffinTone message."), "CoffinTone");
 
     static Component getPrefix() {
-        // Inner text component
-        final Calendar now = Calendar.getInstance();
-        final boolean xd = now.get(Calendar.MONTH) == Calendar.APRIL && now.get(Calendar.DAY_OF_MONTH) <= 3;
-        MutableComponent baritone = Component.literal(xd ? "Baritoe" : BaritoneAPI.getSettings().shortBaritonePrefix.value ? "B" : "Baritone");
+        MutableComponent baritone = Component.literal(BaritoneAPI.getSettings().shortBaritonePrefix.value ? "C" : "CoffinTone");
         baritone.setStyle(baritone.getStyle().withColor(ChatFormatting.LIGHT_PURPLE));
 
         // Outer brackets

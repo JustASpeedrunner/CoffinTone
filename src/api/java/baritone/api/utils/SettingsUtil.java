@@ -88,9 +88,9 @@ public class SettingsUtil {
                 }
             });
         } catch (NoSuchFileException ignored) {
-            Helper.HELPER.logDirect("Baritone settings file not found, resetting.");
+            Helper.HELPER.logDirect("CoffinTone settings file not found, resetting.");
         } catch (Exception ex) {
-            Helper.HELPER.logDirect("Exception while reading Baritone settings, some settings may be reset to default values!");
+            Helper.HELPER.logDirect("Exception while reading CoffinTone settings, some settings may be reset to default values!");
             ex.printStackTrace();
         }
     }
